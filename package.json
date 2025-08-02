@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yourusername.github.io/Task_manager",
+  "homepage": "https://kavya-3008.github.io/Task_manager",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
