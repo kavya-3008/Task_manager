@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { CheckSquare, Eye, EyeOff } from 'lucide-react';
 
 const Login: React.FC = () => {
   const { login } = useAuth();
@@ -36,7 +35,9 @@ const Login: React.FC = () => {
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
           <div className="flex justify-center">
-            <CheckSquare className="h-12 w-12 text-blue-600" />
+            <div className="h-12 w-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+              T
+            </div>
           </div>
           <h2 className="mt-6 text-3xl font-bold text-gray-900">
             Welcome back
@@ -92,7 +93,7 @@ const Login: React.FC = () => {
                   onClick={() => setShowPassword(!showPassword)}
                   className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600"
                 >
-                  {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                  {showPassword ? 'Hide' : 'Show'}
                 </button>
               </div>
             </div>
